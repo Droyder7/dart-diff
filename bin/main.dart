@@ -53,7 +53,7 @@ void main(List<String> arguments) {
 
   final modifiedFiles = getModifiedFiles(remote, branch)
       .where(
-        (file) => file.endsWith('.dart') && file.startsWith(relativeBasePath),
+        (file) => file.endsWith('.dart'),
       )
       .toList();
 
